@@ -22,6 +22,12 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z3x-me-gtI">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
                                         <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Packing List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQb-aO-g4V">
+                                                <rect key="frame" x="244" y="22" width="113" height="26"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lG3-Q5-407">
                                                 <rect key="frame" x="562" y="12" width="30" height="45"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
@@ -30,12 +36,6 @@
                                                     <action selector="actionToggleMenu:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IlM-Pe-tIj"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Packing List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQb-aO-g4V">
-                                                <rect key="frame" x="244" y="22" width="113" height="26"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -56,6 +56,7 @@
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ONK-vt-Svt" id="8tf-Fb-NFm">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
                                         </prototypes>
@@ -77,8 +78,8 @@
                     </view>
                     <connections>
                         <outlet property="buttonMenu" destination="lG3-Q5-407" id="IO2-Q7-lgM"/>
-                        <outlet property="closeButtonTrailing" destination="qXi-bj-l5C" id="v0C-mA-7SJ"/>
-                        <outlet property="menuHeightConstrait" destination="ZWV-ZX-h02" id="Og0-Kn-prG"/>
+                        <outlet property="closeButtonTrailing" destination="qXi-bj-l5C" id="hSQ-2x-lkE"/>
+                        <outlet property="menuHeightConstraint" destination="ZWV-ZX-h02" id="mal-U3-Rea"/>
                         <outlet property="tableView" destination="bU8-js-HeE" id="YEH-pS-8tt"/>
                         <outlet property="titleLabel" destination="jQb-aO-g4V" id="7OI-ep-fvg"/>
                     </connections>
